@@ -5,7 +5,7 @@ import { Container, Row } from 'reactstrap';
 import { ScheduleRender } from './Schedule';
 import { TimeLine } from './Timeline';
 
-import './WorkSched.css';
+import './WorkSchedule.css';
 
 class WorkSched extends Component {
     constructor(props) {

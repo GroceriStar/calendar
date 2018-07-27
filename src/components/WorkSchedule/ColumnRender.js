@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { data }   from '../../data/Data_WorkSceh';
+import { data }   from '../../data/Data_WorkSchedule';
 import { rendererFunc } from './Methods.js';
 
 class ColumnRender extends Component {
