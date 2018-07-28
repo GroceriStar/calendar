@@ -21,25 +21,26 @@ class WorkSchedule extends Component {
             mode: !this.state.mode
         })
     }
+
     render() {
       return(
-            <div>
-                <div className='header'>
-                  <h1>
-                    Schedule
-                  </h1>
-          			<button onClick={this.changeMode}>Switch Mode</button>
-                </div>
-                
-                <Container>
-                    <Row>
-                        <div className='timeline'>
-                          <TimeLine mode={this.state.mode}/>
-                        </div>
-                        <ScheduleRender mode={this.state.mode}/>
-                    </Row>
-                </Container>
-            </div>
+		<div>
+			<div className='header'>
+				<h1>
+					Schedule
+				</h1>
+				<button onClick={this.changeMode}>Switch Mode</button>
+			</div>
+
+			<Container>
+				<Row>
+					<div className='timeline'>
+						<TimeLine mode={this.state.mode}/>
+					</div>
+					<ScheduleRender mode={this.state.mode}/>
+				</Row>
+			</Container>
+		</div>
         );
     }
 }
