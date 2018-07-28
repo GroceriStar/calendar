@@ -7,7 +7,7 @@ import { TimeLine } from './Timeline';
 
 import './WorkSchedule.css';
 
-class WorkSched extends Component {
+class WorkSchedule extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -28,8 +28,9 @@ class WorkSched extends Component {
                   <h1>
                     Schedule
                   </h1>
-          <button onClick={this.changeMode}>Switch Mode</button>
+          			<button onClick={this.changeMode}>Switch Mode</button>
                 </div>
+                
                 <Container>
                     <Row>
                         <div className='timeline'>
