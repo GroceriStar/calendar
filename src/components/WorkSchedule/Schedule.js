@@ -4,13 +4,16 @@ import { ListGroup,
 } from 'reactstrap';
 import { weekdayName } from '../../data/days';
 import { ColumnRender } from './ColumnRender';
-import {  defaultBlockHeight } from '../../data/style_vars'
+import { defaultBlockHeight } from '../../data/style_vars';
+import { Col } from 'reactstrap';
 
 
 class ScheduleRender extends Component {
     render() {
         return(
-            weekdayName.map((day, index) => 
+               
+            weekdayName.map((day, index) =>
+                    <Col sm="2">
                 <div key={index} className='data-class'>
                     <ListGroup>
                         <ListGroupItem style={defaultBlockHeight}>
@@ -19,9 +22,11 @@ class ScheduleRender extends Component {
                         <ColumnRender mode={this.props.mode} 
                                 key={index} 
                                 index={index} />
-                    </ListGroup>
+                        </ListGroup>
                 </div>
+                            </Col>
                 )
+              
             );
         }
 }

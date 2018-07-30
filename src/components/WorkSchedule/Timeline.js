@@ -15,10 +15,8 @@ class TimeLine extends Component {
             }
             let result = timeSplit.join(':');
             return result;
-        }
-        else {
+        } 
             return time;
-        }
     }
     
     render() {

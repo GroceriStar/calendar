@@ -1,7 +1,7 @@
 import React, {
   Component 
 } from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { ScheduleRender } from './Schedule';
 import { TimeLine } from './Timeline';
 
@@ -34,9 +34,12 @@ class WorkSchedule extends Component {
 
 			<Container>
 				<Row>
+                    <Col sm="2">
 					<div className='timeline'>
 						<TimeLine mode={this.state.mode}/>
 					</div>
+                    </Col>
+                    
 					<ScheduleRender mode={this.state.mode}/>
 				</Row>
 			</Container>
