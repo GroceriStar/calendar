@@ -8,11 +8,12 @@ import {
   ModalFooter
 } from 'reactstrap';
 
-
+import data from '@groceristar/groceristar-fetch/groceristar';
 let dummyText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
 
 class Modals extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -27,7 +28,7 @@ class Modals extends Component {
             modal: !this.state.modal
         });
     }
-    
+
     transformTime(time) {
         if(this.props.mode) {
         let timeLapse = time.split('-', 2).map(index => index.split(':', 2));
@@ -42,13 +43,22 @@ class Modals extends Component {
         }
         let result = timeLapse.map(index => index.join(':')).join('-');
         return result;
-        
+
         }
         else {
             return time;
         }
     }
-    
+
+    displayIngredients(){
+      let result = data.getIngredients().filter(function(item){
+        if(item.department === "Condiments / Sauces") return item.name;
+      });
+      return result.map((item) =>
+      <li key={item.name}>{item.name}</li>
+    );
+
+    }
 
     render() {
         return(
@@ -60,14 +70,16 @@ class Modals extends Component {
                         {this.transformTime(this.props.data.time)}
                     </div>{this.props.data.text}
                 </ListGroupItem>
-                <Modal isOpen={this.state.modal} 
-                      toggle={this.toggle} 
+                <Modal isOpen={this.state.modal}
+                      toggle={this.toggle}
                       className={this.props.className}>
                   <ModalHeader toggle={this.toggle}>
                     {this.props.data.text}
                   </ModalHeader>
                   <ModalBody>
-                    {dummyText}
+                    <h3>Ingredients</h3>
+                    <h4>Condiments / Sauces</h4>
+                    <ul>{this.displayIngredients()}</ul>
                   </ModalBody>
                   <ModalFooter>
                     <Button color="primary" onClick={this.toggle}>
