@@ -51,11 +51,16 @@ class Modals extends Component {
     }
 
     displayIngredients(){
-      let result = data.getIngredients().filter(function(item){
-        if(item.department === "Condiments / Sauces") return item.name;
-      });
+      let result
+      = data.getAllIngredientsByOneDepartment("Condiments / Sauces");
+      console.log(result);
+
+      // = data.getIngredients().filter(function(item){
+      //   if(item.department === "Condiments / Sauces") return item.name;
+      // });
+      // console.log(result);
       return result.map((item) =>
-      <li key={item.name}>{item.name}</li>
+      <li key={item}>{item}</li>
     );
 
     }
@@ -78,7 +83,6 @@ class Modals extends Component {
                   </ModalHeader>
                   <ModalBody>
                     <h3>Ingredients</h3>
-                    <h4>Condiments / Sauces</h4>
                     <ul>{this.displayIngredients()}</ul>
                   </ModalBody>
                   <ModalFooter>
