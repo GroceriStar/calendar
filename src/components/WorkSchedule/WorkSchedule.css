@@ -25,15 +25,15 @@ div.data-class ul li:first-child {
     text-align: center;
 }
 
-div.data-class ul li.abs {
+div.data-class ul li.breakfast {
     background-color: #567F91;
 }
 
-div.data-class ul li.rowing {
+div.data-class ul li.lunch {
     background-color: #433455;
 }
 
-div.data-class ul li.yoga {
+div.data-class ul li.dinner {
     background-color: #A2B9B1;
 }
 
@@ -41,18 +41,18 @@ div.data-class ul li.restorive {
     background-color: #F6B068;
 }
 
-div.data-class ul li.restorive, div.data-class ul li.yoga, div.data-class ul li.rowing, div.data-class ul li.abs {
+div.data-class ul li.restorive, div.data-class ul li.dinner, div.data-class ul li.lunch, div.data-class ul li.breakfast{
     color: white;
     font-weight: 700;
     box-shadow: 0 2px 2px black;
 }
 
-div.data-class ul li.restorive:hover, div.data-class ul li.yoga:hover, div.data-class ul li.rowing:hover, div.data-class ul li.abs:hover {
+div.data-class ul li.restorive:hover, div.data-class ul li.dinner:hover, div.data-class ul li.lunch:hover, div.data-class ul li.abs:hover {
     filter: brightness(1.13);
     filter: opacity(90%);
 }
 
-div.data-class ul li.restorive div, div.data-class ul li.yoga div, div.data-class ul li.rowing div, div.data-class ul li.abs div {
+div.data-class ul li.restorive div, div.data-class ul li.dinner div, div.data-class ul li.lunch div, div.data-class ul li.breakfast div {
     color: #eed;
     font-weight: 400;
 }
@@ -62,4 +62,3 @@ div.data-class ul li.restorive div, div.data-class ul li.yoga div, div.data-clas
 div.data-class ul li.short0 {
     height: 20px;
 }
-
