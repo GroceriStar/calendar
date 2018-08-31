@@ -1,8 +1,8 @@
-import React, { 
-  Component 
+import React, {
+  Component
 } from 'react';
-import { ListGroup, 
-    ListGroupItem 
+import { ListGroup,
+    ListGroupItem
 } from 'reactstrap';
 
 class TimeLine extends Component {
@@ -15,24 +15,22 @@ class TimeLine extends Component {
             }
             let result = timeSplit.join(':');
             return result;
-        } 
+        }
             return time;
     }
-    
+
     render() {
         return (
                 <div className='timedHeight'>
                     <ListGroup>
+                        <ListGroupItem>{this.transformTime('07:00')}</ListGroupItem>
+                        <ListGroupItem>{this.transformTime('08:00')}</ListGroupItem>
                         <ListGroupItem>{this.transformTime('09:00')}</ListGroupItem>
-                        <ListGroupItem>{this.transformTime('10:00')}</ListGroupItem>
-                        <ListGroupItem>{this.transformTime('11:00')}</ListGroupItem>
                         <ListGroupItem>{this.transformTime('12:00')}</ListGroupItem>
                         <ListGroupItem>{this.transformTime('13:00')}</ListGroupItem>
                         <ListGroupItem>{this.transformTime('14:00')}</ListGroupItem>
-                        <ListGroupItem>{this.transformTime('15:00')}</ListGroupItem>
-                        <ListGroupItem>{this.transformTime('16:00')}</ListGroupItem>
-                        <ListGroupItem>{this.transformTime('17:00')}</ListGroupItem>
                         <ListGroupItem>{this.transformTime('18:00')}</ListGroupItem>
+                        <ListGroupItem>{this.transformTime('19:00')}</ListGroupItem>
                     </ListGroup>
                 </div>
         );

@@ -7,8 +7,8 @@ class ColumnRender extends Component {
 
     Schedule() {
 
-      var result = data[0]["recipes"][this.props.index+1];
-        return rendererFunc(result, this.props.mode)
+      var result = data[0]["recipes"][this.props.index];
+              return rendererFunc(result, this.props.mode)
 
     }
 
