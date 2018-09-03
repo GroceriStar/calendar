@@ -2,11 +2,12 @@
 # yarn lockfile v1
 
 
-"@groceristar/groceristar-fetch@^1.1.18":
-  version "1.1.18"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.18.tgz#7c7cc58f828a9743e80dc09f6d4f59a03155e48e"
+"@groceristar/groceristar-fetch@^1.1.19":
+  version "1.1.19"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.19.tgz#64ecbc73f2e43fc364f5b0e03ab934f6dea85390"
   dependencies:
     fs "0.0.1-security"
+    lodash "^4.17.10"
     underscore "^1.9.1"
 
 abab@^1.0.3:
