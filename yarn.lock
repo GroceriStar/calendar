@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@groceristar/groceristar-fetch@^1.1.19":
-  version "1.1.19"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.19.tgz#64ecbc73f2e43fc364f5b0e03ab934f6dea85390"
+"@groceristar/groceristar-fetch@^1.1.21":
+  version "1.1.21"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.21.tgz#42ccdafa0c339f94db83d4c1bbf2a33b96bfdb43"
   dependencies:
     fs "0.0.1-security"
     lodash "^4.17.10"
