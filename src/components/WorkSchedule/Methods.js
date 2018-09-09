@@ -49,8 +49,8 @@ function rendererFunc(daySchedule, mode) {
 
         let topToBottom = _.range(0, 800, 25).reduce((accumulator, item) => {
             accumulator.push(item);
-            console.log("Item");
-            console.log(item);
+            // console.log("Item");
+            // console.log(item);
             // console.log("Buff start");
             // console.log(buffer[j]);
             if (item > buffer[j].start &&
