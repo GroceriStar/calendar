@@ -6,7 +6,7 @@
     "@groceristar/groceristar-fetch": "^1.1.23",
     "bootstrap": "^4.1.3",
     "i": "^0.3.6",
-    "react": "^16.5.0",
+    "react": "^16.5.1",
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5",
     "reactstrap": "^6.4.0",
