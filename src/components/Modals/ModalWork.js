@@ -8,8 +8,7 @@ import {
   ModalFooter
 } from 'reactstrap';
 
-import data from '@groceristar/groceristar-fetch/groceristar';
-let dummyText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+import data from '@groceristar/groceristar-fetch/chickenKyiv';
 
 
 class Modals extends Component {
@@ -52,13 +51,8 @@ class Modals extends Component {
 
     displayIngredients(){
       let result
-      = data.getAllIngredientsByOneDepartment("Condiments / Sauces");
+      = data.getRecipe()[Math.floor(Math.random() * 101)]["ingredients"];
       console.log(result);
-
-      // = data.getIngredients().filter(function(item){
-      //   if(item.department === "Condiments / Sauces") return item.name;
-      // });
-      // console.log(result);
       return result.map((item) =>
       <li key={item}>{item}</li>
     );
