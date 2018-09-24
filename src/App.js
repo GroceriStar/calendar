@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
-import { WorkSchedule } from './components/WorkSchedule/WorkSchedule';
-
+import Router from './Router';
 import './App.css';
 
 class App extends Component {
   render() {
-    return (<WorkSchedule />)
+    return (
+      <div>
+        <Router />
+      </div>
+    )
   }
 }
 
