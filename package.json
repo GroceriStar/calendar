@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@groceristar/groceristar-fetch": "^1.1.25",
+    "@react-pdf/renderer": "^1.0.0-alpha.18",
     "bootstrap": "^4.1.3",
     "i": "^0.3.6",
     "react": "^16.5.2",
