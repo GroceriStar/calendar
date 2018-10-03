@@ -3,6 +3,8 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { AvForm } from "availity-reactstrap-validation";
 import { MealForm } from "../MealPlanner/Form";
 
+//@TODO LOOKS LIKE WE DONT NEED THIS COMPONENT HERE.
+
 class AddMeal extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +29,9 @@ class AddMeal extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.toggle}>Add Meal</Button>
+        <Button className="add-new-meal" onClick={this.toggle}>
+          Add Meal
+        </Button>
 
         <Modal
           isOpen={this.state.modal}

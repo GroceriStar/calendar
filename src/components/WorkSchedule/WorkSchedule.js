@@ -3,6 +3,9 @@ import { Container, Row, Col } from "reactstrap";
 import { ScheduleRender } from "./Schedule";
 import { TimeLine } from "./Timeline";
 
+// @TODO we call this component WorkSchedule only because
+// our HTML template have a Workout Schedule plage, So i assume - we can make it better and simplier...
+
 import "./WorkSchedule.css";
 import data from "@groceristar/groceristar-fetch/groceristar";
 

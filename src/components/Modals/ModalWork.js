@@ -29,7 +29,7 @@ class Modals extends Component {
   transformTime(time) {
     if (this.props.mode) {
       let timeLapse = time.split("-", 2).map(index => index.split(":", 2));
-      console.log(timeLapse);
+      // console.log(timeLapse);
       if (timeLapse[1][0] > 12) {
         timeLapse[1][0] -= 12;
         timeLapse[1][0] = "0" + timeLapse[1][0];
@@ -46,10 +46,10 @@ class Modals extends Component {
   }
 
   displayIngredients() {
-    let result = data.getRecipe()[Math.floor(Math.random() * 101)][
-      "ingredients"
-    ];
-    console.log(result);
+    let recipes = data.getRecipe();
+    let random_key = Math.floor(Math.random() * 101);
+    let result = recipes[random_key]["ingredients"];
+    // console.log(result);
     return result.map(item => <li key={item}>{item}</li>);
   }
 
