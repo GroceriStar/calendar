@@ -55,6 +55,7 @@ class Modals extends Component {
   }
 
   render() {
+    // console.log(this.props);
     return (
       <div>
         <ListGroupItem
@@ -76,6 +77,7 @@ class Modals extends Component {
             <ul>{this.displayIngredients()}</ul>
           </ModalBody>
           <ModalFooter>
+
             <Button color="primary" onClick={this.toggle}>
               Do Something
             </Button>{" "}
