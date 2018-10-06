@@ -47,6 +47,7 @@ class Modals extends Component {
 
   displayIngredients() {
     let recipes = data.getRecipe();
+    console.log(recipes);
     let random_key = Math.floor(Math.random() * 101);
     let result = recipes[random_key]["ingredients"];
     // console.log(result);
