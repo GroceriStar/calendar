@@ -12,14 +12,20 @@ script: npm test # Here you could also run the build step of your application
 deploy:
   - provider: script
 #    script: npm run travis:staging
-    script: yarn run test
+
+# Commented due to error at travis builds. will test it deeply later
+#    script: yarn run test
+    script: npm run test
     skip_cleanup: true
     on:
       master: true
   - edge: true
     provider: script
 #    script: npm run travis:production
-    script: yarn run test
+
+# Commented due to error at travis builds. will test it deeply later
+#    script: yarn run test
+    script: npm run test
     skip_cleanup: true
     on:
       tags: true
