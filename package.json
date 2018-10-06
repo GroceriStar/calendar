@@ -20,7 +20,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --watch",
     "eject": "react-scripts eject"
   },
   "devDependencies": {

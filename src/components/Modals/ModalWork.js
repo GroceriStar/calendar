@@ -51,6 +51,9 @@ class Modals extends Component {
     let random_key = Math.floor(Math.random() * 101);
     let result = recipes[random_key]["ingredients"];
     // console.log(result);
+    if (!result){
+      return '';
+    }
     return result.map(item => <li key={item}>{item}</li>);
   }
 

@@ -1,10 +1,14 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
+import Enzyme, { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
-import { DisplayList } from "DisplayList";
+configure({ adapter: new Adapter() });
 
-Enzyme.configure({ adapter: new Adapter() });
+// import Adapter from "enzyme-adapter-react-16";
+
+import { DisplayList } from "./DisplayList";
+
+// configure({ adapter: new Adapter() });
 
 describe("<DisplayList /> component shallow only methods ", () => {
   test("renders without crashing", () => {
