@@ -7,7 +7,7 @@ import {
   ModalBody,
   ModalFooter
 } from "reactstrap";
-
+import shortid from "shortid";
 import data from "@groceristar/groceristar-fetch/chickenKyiv";
 
 class Modals extends Component {
@@ -47,14 +47,14 @@ class Modals extends Component {
 
   displayIngredients() {
     let recipes = data.getRecipe();
-    console.log(recipes);
+    // console.log(recipes);
     let random_key = Math.floor(Math.random() * 101);
     let result = recipes[random_key]["ingredients"];
     // console.log(result);
     if (!result){
       return '';
     }
-    return result.map(item => <li key={item}>{item}</li>);
+    return result.map(item => <li key={shortid.generate()}>{item}</li>);
   }
 
   render() {

@@ -1,9 +1,15 @@
 import React, { Component } from "react";
-import { ListGroup, ListGroupItem } from "reactstrap";
-import { weekdayName } from "../../data/days";
+import { ListGroup, ListGroupItem, Col } from "reactstrap";
 import { ColumnRender } from "./ColumnRender";
+import { weekdayName } from "../../data/days";
 import { defaultBlockHeight } from "../../data/style_vars";
-import { Col } from "reactstrap";
+import shortid from "shortid"
+
+
+
+
+
+
 
 class ScheduleRender extends Component {
   render() {
@@ -14,7 +20,7 @@ class ScheduleRender extends Component {
         <div key={index} className="data-class">
           <ListGroup>
             <ListGroupItem style={defaultBlockHeight}>{day}</ListGroupItem>
-            <ColumnRender mode={this.props.mode} key={index} index={index} />
+            <ColumnRender mode={this.props.mode} key={shortid.generate()} index={index} />
           </ListGroup>
         </div>
       </Col>

@@ -49,7 +49,9 @@ function getOffset(obj) {
 // I bet it can be made better. 100%. totally :)
 function rendererFunc(daySchedule, mode) {
   let buffer = getOffset(daySchedule);
-  console.log(buffer);
+
+  // console.log(buffer);
+
   let blockHeight;
   let i = 0;
   let j = 0;
