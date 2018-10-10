@@ -6,11 +6,6 @@ import { defaultBlockHeight } from "../../data/style_vars";
 import shortid from "shortid"
 
 
-
-
-
-
-
 class ScheduleRender extends Component {
   render() {
     // weekdayName.map((day, index) => console.log(index) );
