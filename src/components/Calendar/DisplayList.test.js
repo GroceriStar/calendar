@@ -92,6 +92,18 @@ describe("for <DisplayList /> we're showing different between shallow and mount"
 
     wrapper.debug();
   });
+
+  it("", () => {
+    it("renders a DisplayList with id class and find it", () => {
+      const wrapper = mount(
+        <div>
+          <DisplayList id="find-me" />
+        </div>
+      );
+
+      expect(wrapper.find("#find-me").length).toBe(1);
+    });
+  });
 });
 
 describe("<DisplayList /> set props or update state", () => {
