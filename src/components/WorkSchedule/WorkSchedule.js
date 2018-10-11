@@ -24,6 +24,11 @@ class WorkSchedule extends Component {
     });
   }
 
+  getRandomWeek(){
+
+    return "week" + Math.floor(Math.random() * 10);
+  }
+
   render() {
     //console.log(data.getIngredients());
     //console.log(data.getGrocery());
@@ -47,7 +52,7 @@ class WorkSchedule extends Component {
               </div>
             </Col>
 
-            <ScheduleRender mode={this.state.mode} />
+            <ScheduleRender mode={this.state.mode} week={this.getRandomWeek()} />
           </Row>
         </Container>
       </div>
