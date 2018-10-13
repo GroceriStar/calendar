@@ -8,7 +8,7 @@ import { rendererFunc } from "./Methods.js";
 class ColumnRender extends Component {
   Schedule() {
     //@TODO can we instead of having here a
-    var result = data.getDishByWeek("week1")[0]["recipes"][
+    var result = data.getDishByWeek(this.props.randomWeek)[0]["recipes"][
       this.props.index + 1
     ];
     return rendererFunc(result, this.props.mode);

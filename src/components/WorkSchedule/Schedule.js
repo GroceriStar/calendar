@@ -7,15 +7,17 @@ import shortid from "shortid"
 
 
 class ScheduleRender extends Component {
+
+
   render() {
     // weekdayName.map((day, index) => console.log(index) );
-
+    console.log(this.props.week);
     return weekdayName.map((day, index) => (
       <Col sm="2">
         <div key={index} className="data-class">
           <ListGroup>
             <ListGroupItem style={defaultBlockHeight}>{day}</ListGroupItem>
-            <ColumnRender mode={this.props.mode} key={shortid.generate()} index={index} />
+            <ColumnRender mode={this.props.mode} key={shortid.generate()} index={index}  randomWeek={this.props.week}/>
           </ListGroup>
         </div>
       </Col>
