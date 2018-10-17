@@ -17,7 +17,7 @@ class ScheduleRender extends Component {
         <div key={index} className="data-class">
           <ListGroup>
             <ListGroupItem style={defaultBlockHeight}>{day}</ListGroupItem>
-            <ColumnRender mode={this.props.mode} key={shortid.generate()} index={index}  randomWeek={this.props.week}/>
+            <ColumnRender mode={this.props.mode} key={shortid.generate()} index={index}  randomWeek={this.props.week} randomRecipes={this.props.randomRecipes}/>
           </ListGroup>
         </div>
       </Col>

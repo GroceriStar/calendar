@@ -11,7 +11,8 @@ class ColumnRender extends Component {
     var result = data.getDishByWeek(this.props.randomWeek)[0]["recipes"][
       this.props.index + 1
     ];
-    return rendererFunc(result, this.props.mode);
+
+    return rendererFunc(result, this.props.mode, this.props.randomRecipes[this.props.index]);
   }
 
   render() {
