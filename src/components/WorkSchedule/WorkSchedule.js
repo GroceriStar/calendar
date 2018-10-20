@@ -29,15 +29,15 @@ class WorkSchedule extends Component {
     return "week" + Math.floor(Math.random() * 10);
   }
 
-  getFiveRandomRecipes(){
-    let recipes = chickenKyiv.getRecipe();
+  getFiveRandomIngredients(){
+    let ingredients = chickenKyiv.getRecipe();
     let result = [];
     let random_key = 0;
-    let countRecipes = 5;
+    let countIngredients = 5;
 
-    for(var i = 0; i < countRecipes; i++){
+    for(var i = 0; i < countIngredients; i++){
       random_key = Math.floor(Math.random() * 101);
-      result.push(recipes[random_key]["ingredients"]);
+      result.push(ingredients[random_key]["ingredients"]);
     }
     return result;
   }
@@ -65,7 +65,10 @@ class WorkSchedule extends Component {
               </div>
             </Col>
 
-            <ScheduleRender mode={this.state.mode} week={this.getRandomWeek()} randomRecipes={this.getFiveRandomRecipes()} />
+            <ScheduleRender
+              mode={this.state.mode}
+              week={this.getRandomWeek()}
+              randomIngredients={this.getFiveRandomIngredients()} />
           </Row>
         </Container>
       </div>

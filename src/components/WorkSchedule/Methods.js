@@ -47,7 +47,7 @@ function getOffset(obj) {
 
 //@TODO this is a really crazy function.
 // I bet it can be made better. 100%. totally :)
-function rendererFunc(daySchedule, mode, recipe) {
+function rendererFunc(daySchedule, mode, ingredient) {
   let buffer = getOffset(daySchedule);
 
   // console.log(buffer);
@@ -86,7 +86,7 @@ function rendererFunc(daySchedule, mode, recipe) {
         j += 1;
       }
 
-      return <Modals mode={mode} data={buffer[j - 1]} key={item} recipe={recipe}/>;
+      return <Modals mode={mode} data={buffer[j - 1]} key={item} ingredient={ingredient}/>;
     }
 
     if (

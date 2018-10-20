@@ -49,7 +49,7 @@ class Modals extends Component {
 
     // console.log(recipes);
 
-    let result = this.props.recipe;
+    let result = this.props.ingredient;
     // console.log(result);
     if (!result){
       return '';

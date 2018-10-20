@@ -12,7 +12,7 @@ class ColumnRender extends Component {
       this.props.index + 1
     ];
 
-    return rendererFunc(result, this.props.mode, this.props.randomRecipes[this.props.index]);
+    return rendererFunc(result, this.props.mode, this.props.randomIngredients[this.props.index]);
   }
 
   render() {
