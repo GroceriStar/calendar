@@ -11,7 +11,7 @@ class DisplayList extends Component {
   }
 
   getData(){
-    this.setState(data: this.props.data);
+    this.setState({data: this.props.data});
   }
 
   componentDidMount() {

@@ -47,7 +47,7 @@ function getOffset(obj) {
 
 //@TODO this is a really crazy function.
 // I bet it can be made better. 100%. totally :)
-function rendererFunc(daySchedule, mode) {
+function rendererFunc(daySchedule, mode, ingredient) {
   let buffer = getOffset(daySchedule);
 
   // console.log(buffer);
@@ -55,6 +55,7 @@ function rendererFunc(daySchedule, mode) {
   let blockHeight;
   let i = 0;
   let j = 0;
+
 
   let topToBottom = _.range(0, 800, 25).reduce((accumulator, item) => {
     accumulator.push(item);
@@ -76,6 +77,7 @@ function rendererFunc(daySchedule, mode) {
 
   j = 0;
   return topToBottom.map((item, index) => {
+
     if (item === buffer[i].start) {
       if (i < buffer.length - 1) {
         i += 1;
@@ -83,7 +85,8 @@ function rendererFunc(daySchedule, mode) {
       if (j < buffer.length) {
         j += 1;
       }
-      return <Modals mode={mode} data={buffer[j - 1]} key={item} />;
+
+      return <Modals mode={mode} data={buffer[j - 1]} key={item} ingredient={ingredient}/>;
     }
 
     if (
