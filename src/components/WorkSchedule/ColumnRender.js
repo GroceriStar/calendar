@@ -13,17 +13,17 @@ class ColumnRender extends Component {
     var recipes = dishByWeek["recipes"];
     var dishByDay = recipes[this.props.index + 1];
 
-    // var rendere = new RenderData();
-    // rendere.setIngredient(this.props.randomIngredients[this.props.index]);
-    // rendere.setMode(this.props.mode);
-    // rendere.setDishByDay(dishByDay);
     var result = {
       "dishByDay" : dishByDay,
       "mode": this.props.mode,
       "ingredient": this.props.randomIngredients[this.props.index]
     };
+    
+    console.log(result.dishByDay);
+    console.log(result.mode);
+    console.log(result.ingredient);
     return (<RenderData mealByDay = {result}/ >);
-    {/* rendererFunc(result, this.props.mode, this.props.randomIngredients[this.props.index]); */}
+
   }
 
   render() {
