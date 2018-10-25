@@ -864,16 +864,16 @@
   resolved "https://registry.yarnpkg.com/@react-pdf/png-js/-/png-js-1.0.0.tgz#00fcb969dca4ce82a0a7673413ade039e47b361e"
   integrity sha1-APy5adykzoKgp2c0E63gOeR7Nh4=
 
-"@react-pdf/renderer@^1.0.0-alpha.18":
-  version "1.0.0-alpha.18"
-  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.0.0-alpha.18.tgz#0486557ea197adae3630c81bb335ce73d88dee45"
-  integrity sha512-gOY6gjGrOtqD13GjLPW3IacVfsCLFtUhIm/qq+2jNrTI2r1trFQGC61p732DOg3h7qotKFNwiO9UfWFTrZZcdw==
+"@react-pdf/renderer@^1.0.0-alpha.19":
+  version "1.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.0.0-alpha.19.tgz#4b4b2607120efeec86635479402cf931fb346f3a"
+  integrity sha512-5ypnlj7cNiyPNKf3/LDBD+pttvA8EHPfi7OIGsJTwrHC1jIshjbQ0sXvcc/GV2MTmj+fF/j4ryP05CC2fZl7fg==
   dependencies:
     "@react-pdf/fontkit" "^1.11.0"
     "@react-pdf/pdfkit" "^1.2.0"
     "@react-pdf/png-js" "^1.0.0"
-    "@react-pdf/script-itemizer" "^0.1.11"
-    "@react-pdf/textkit-core" "^0.1.21"
+    "@react-pdf/script-itemizer" "^0.1.12"
+    "@react-pdf/textkit-core" "^0.1.22"
     "@textkit/justification-engine" "^0.1.9"
     "@textkit/line-fragment-generator" "^0.1.9"
     "@textkit/linebreaker" "^0.1.9"
@@ -881,7 +881,6 @@
     "@textkit/text-decoration-engine" "^0.1.10"
     babel-runtime "^6.26.0"
     blob-stream "^0.1.3"
-    buffer "^5.1.0"
     emoji-regex "^6.5.1"
     fbjs "^0.8.4"
     hyphenation.en-us "^0.2.1"
@@ -901,17 +900,17 @@
     react-reconciler "^0.12.0"
     yoga-layout "1.9.3"
 
-"@react-pdf/script-itemizer@^0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@react-pdf/script-itemizer/-/script-itemizer-0.1.11.tgz#f850ec3b735ae71d26ccc7adfa94e922cc01ebc7"
-  integrity sha512-YQL7pHOk1f4ejIdlFesOX2sUydSX04O8VrHc5MfoVIxXMtuS3ax2eKfOI0JyMSI1yrz7ZfOoXX4bYYUuVALFmQ==
+"@react-pdf/script-itemizer@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@react-pdf/script-itemizer/-/script-itemizer-0.1.12.tgz#347f7b2c21f19fe5408016ee7a932f45367c091f"
+  integrity sha512-2gzA6dfcvk7Y+zkbjaoMlc5lmrYgUXVSn4GBQ/8m3bjvUh6bgmCcEbQbjff7r0NsFM0Ebo/tLtPLC/avPUdRtg==
   dependencies:
     "@react-pdf/unicode-properties" "^2.2.0"
 
-"@react-pdf/textkit-core@^0.1.21":
-  version "0.1.21"
-  resolved "https://registry.yarnpkg.com/@react-pdf/textkit-core/-/textkit-core-0.1.21.tgz#1697571d3543a31ffb19fc63c13c7e9754ebbb66"
-  integrity sha512-UmeWCWHxLTczM2SX5/dMBeqEPH7AwPeZ+K9ASAnn8Q+C7T5uPUgVbWEQ7f8zWaPz+lggVy7BaJw0sCjSwzbVaA==
+"@react-pdf/textkit-core@^0.1.22":
+  version "0.1.22"
+  resolved "https://registry.yarnpkg.com/@react-pdf/textkit-core/-/textkit-core-0.1.22.tgz#8c9a9aa67bae2e197a84ef8e803e639a78531521"
+  integrity sha512-omZ8IU1nVZWNUVBt813DoPYEp51mJhYXq8GhMeIbp+bASQf9+xJLH1yQhjAOahJZ/P9crIVnmNo7nZaCAaQZbQ==
   dependencies:
     "@react-pdf/unicode-properties" "^2.2.0"
     cubic2quad "^1.1.0"
@@ -2146,14 +2145,6 @@ buffer@^4.3.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
-
-buffer@^5.1.0:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.2.1.tgz#dd57fa0f109ac59c602479044dca7b8b3d0b71d6"
-  integrity sha512-c+Ko0loDaFfuPWiL02ls9Xd3GO3cPVmUobQ6t3rXNUk304u6hGq+8N/kFi+QEIKhzK3uwolVhLzszmfLmMLnqg==
-  dependencies:
-    base64-js "^1.0.2"
-    ieee754 "^1.1.4"
 
 builtin-modules@^1.0.0:
   version "1.1.1"
