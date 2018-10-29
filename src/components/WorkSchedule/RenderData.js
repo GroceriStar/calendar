@@ -93,7 +93,11 @@ class RenderData extends Component{
           j += 1;
         }
 
-        return <Modals mode={this.state.mode} data={buffer[j - 1]} key={item} ingredient={this.state.ingredient}/>;
+        return <Modals mode={this.state.mode}
+        data={buffer[j - 1]}
+        key={item}
+        ingredient={this.state.ingredient}
+        />;
       }
 
       if (
