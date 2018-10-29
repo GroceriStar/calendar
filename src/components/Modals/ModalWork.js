@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 import shortid from "shortid";
 import data from "@groceristar/groceristar-fetch/chickenKyiv";
+import "./ModalWork.css";
 
 class Modals extends Component {
   constructor(props) {
@@ -24,6 +25,11 @@ class Modals extends Component {
     this.setState({
       modal: !this.state.modal
     });
+  }
+
+  getLink(){
+
+    return '/meal/'+ this.props.ingredient["id"];
   }
 
   transformTime(time) {
@@ -49,7 +55,7 @@ class Modals extends Component {
 
     // console.log(recipes);
 
-    let result = this.props.ingredient;
+    let result = this.props.ingredient["ingredient"];
     // console.log(result);
     if (!result){
       return '';
@@ -68,13 +74,22 @@ class Modals extends Component {
         >
           <div>{this.transformTime(this.props.data.time)}</div>
           {this.props.data.text}
+
         </ListGroupItem>
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}
           className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>{this.props.data.text}</ModalHeader>
+          <ModalHeader toggle={this.toggle}>
+          {this.props.data.text}
+          <br/>
+            <a className = "link-id" href= {this.getLink()}>
+              <button className = "read-more" type="button">
+                Read more...
+                </button>
+            </a>
+          </ModalHeader>
           <ModalBody>
             <h3>Ingredients</h3>
             <ul>{this.displayIngredients()}</ul>
@@ -82,7 +97,7 @@ class Modals extends Component {
           <ModalFooter>
 
             <Button color="primary" onClick={this.toggle}>
-              Do Something
+              Ok
             </Button>{" "}
             <Button color="secondary" onClick={this.toggle}>
               Cancel

@@ -37,8 +37,16 @@ class WorkSchedule extends Component {
 
     for(var i = 0; i < countIngredients; i++){
       random_key = Math.floor(Math.random() * 101);
-      result.push(ingredients[random_key]["ingredients"]);
+      let ingredient = {
+        "id" : random_key,
+        "ingredient" : ingredients[random_key]["ingredients"]
+      }
+
+      console.log(ingredient);
+      result.push(ingredient);
     }
+    console.log("Result *****");
+    console.log(result);
     return result;
   }
 
