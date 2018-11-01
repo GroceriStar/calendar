@@ -84,11 +84,11 @@ class Modals extends Component {
           <ModalHeader toggle={this.toggle}>
           {this.props.data.text}
           <br/>
-            <a className = "link-id" href= {this.getLink()}>
+            <Link activeClassName = "link-id" to= {this.getLink()}>
               <button className = "read-more" type="button">
                 Read more...
                 </button>
-            </a>
+            </Link>
           </ModalHeader>
           <ModalBody>
             <h3>Ingredients</h3>

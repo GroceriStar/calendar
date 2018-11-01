@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import data from "@groceristar/groceristar-fetch/chickenKyiv";
 import DisplayList from "./DisplayList";
+import { Link } from 'react-router-dom';
 
 class Meal extends Component {
   constructor(props){
@@ -23,9 +24,9 @@ class Meal extends Component {
         <h3>Directions</h3>
         <DisplayList data={recipe.directions} />
       </div>
-        <a href="/">
+        <Link to="/">
           <h3>Back</h3>
-        </a>
+        </Link>
       </div>
     );
   }
