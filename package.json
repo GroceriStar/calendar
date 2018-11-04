@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@groceristar/groceristar-fetch": "^1.1.28",
+    "@groceristar/groceristar-fetch": "^1.1.29",
     "@react-pdf/renderer": "^1.0.0-alpha.24",
     "yoga-layout": "github:naminho/yoga-layout-windows",
     "@react-pdf/core": "latest",
