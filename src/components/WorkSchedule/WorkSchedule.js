@@ -6,12 +6,14 @@ import { TimeLine } from "./Timeline";
 // @TODO we call this component WorkSchedule only because
 // our HTML template have a Workout Schedule plage, So i assume - we can make it better and simplier...
 
-import "./WorkSchedule.css";
-// import data from "@groceristar/groceristar-fetch/groceristar";
-// import chickenKyiv from "@groceristar/groceristar-fetch/chickenKyiv";
 
-import {getRecipeChickenKyiv} from "../selectors/Selector.js";
+import { getRecipeChickenKyiv } from "../selectors/Selector.js";
+
+import "./WorkSchedule.css";
+
+
 class WorkSchedule extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
