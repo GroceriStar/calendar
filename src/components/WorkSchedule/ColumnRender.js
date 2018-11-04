@@ -5,13 +5,13 @@ import React, { Component } from "react";
 // import data from "@groceristar/groceristar-fetch/mealCalendar";
 // import { rendererFunc } from "./Methods.js";
 import RenderData from "./RenderData.js";
-import Selector from "../selectors/selector.js";
+import {getDish} from "../selectors/Selector.js";
 
 class ColumnRender extends Component {
   Schedule() {
     //@TODO can we instead of having here a
-    let selector = new Selector();
-    var dishByWeek = selector.getDishByWeek(this.props.randomWeek)[0];
+
+    var dishByWeek = getDish(this.props.randomWeek)[0];
     var recipes = dishByWeek["recipes"];
     var dishByDay = recipes[this.props.index + 1];
 

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-
-import data from "@groceristar/groceristar-fetch/chickenKyiv";
 import DisplayList from "./DisplayList";
 import { Link } from 'react-router-dom';
+import {getRecipeChickenKyiv} from "../selectors/Selector.js";
 
 class Meal extends Component {
   constructor(props){
@@ -13,7 +12,7 @@ class Meal extends Component {
   }
 
   render() {
-    let recipe = data.getRecipe()[this.state.id];
+    let recipe = getRecipeChickenKyiv()[this.state.id];
     return (
       <div>
       <div>

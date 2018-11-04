@@ -1,10 +1,12 @@
-import data from "@groceristar/groceristar-fetch/mealCalendar";
+import {mealCalendar} from "@groceristar/groceristar-fetch";
+import {chickenKyiv} from "@groceristar/groceristar-fetch";
 
-class Selector{
-  getDishByWeek(randomWeek){
-    return data.getDishByWeek(randomWeek);
+ function getDish(randomWeek){
+      return mealCalendar.getDishByWeek(randomWeek);
   }
 
+ function getRecipeChickenKyiv(){
+      return chickenKyiv.getRecipe();
 }
 
-export default Selector;
+export {getDish, getRecipeChickenKyiv}
