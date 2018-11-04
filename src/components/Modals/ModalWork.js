@@ -8,8 +8,10 @@ import {
   ModalFooter
 } from "reactstrap";
 import shortid from "shortid";
-import data from "@groceristar/groceristar-fetch/chickenKyiv";
+
 import "./ModalWork.css";
+import {Link} from "react-router-dom";
+
 
 class Modals extends Component {
   constructor(props) {

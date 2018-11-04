@@ -6,10 +6,14 @@ import { TimeLine } from "./Timeline";
 // @TODO we call this component WorkSchedule only because
 // our HTML template have a Workout Schedule plage, So i assume - we can make it better and simplier...
 
+
+import { getRecipeChickenKyiv } from "../selectors/Selector.js";
+
 import "./WorkSchedule.css";
-import data from "@groceristar/groceristar-fetch/groceristar";
-import chickenKyiv from "@groceristar/groceristar-fetch/chickenKyiv";
+
+
 class WorkSchedule extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -30,13 +34,13 @@ class WorkSchedule extends Component {
   }
 
   getFiveRandomIngredients(){
-    let ingredients = chickenKyiv.getRecipe();
+    let ingredients = getRecipeChickenKyiv();
     let result = [];
     let random_key = 0;
     let countIngredients = 5;
 
     for(var i = 0; i < countIngredients; i++){
-      random_key = Math.floor(Math.random() * 101);
+     random_key = Math.floor(Math.random() * 101);
       let ingredient = {
         "id" : random_key,
         "ingredient" : ingredients[random_key]["ingredients"]
