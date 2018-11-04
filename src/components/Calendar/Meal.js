@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DisplayList from "./DisplayList";
 import { Link } from 'react-router-dom';
-import {getRecipeChickenKyiv} from "../selectors/Selector.js";
+import { getRecipeChickenKyiv } from "../selectors/Selector.js";
 
 class Meal extends Component {
   constructor(props){
