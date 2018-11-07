@@ -937,10 +937,10 @@
   resolved "https://registry.yarnpkg.com/@react-pdf/png-js/-/png-js-1.0.0.tgz#00fcb969dca4ce82a0a7673413ade039e47b361e"
   integrity sha1-APy5adykzoKgp2c0E63gOeR7Nh4=
 
-"@react-pdf/renderer@^1.0.0-alpha.24":
-  version "1.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.0.0-alpha.24.tgz#421b2b84f2904d5dc5ead7a20b595dac9d3a9583"
-  integrity sha512-HYPAbKVac6kwaAB2Q44s54F2GTpYthBI9humcwb5t5NGTK4mLM0VPsFBWYIrAm3vGGMaZWIFk2Em435wh8rr0A==
+"@react-pdf/renderer@^1.0.0-alpha.25":
+  version "1.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.0.0-alpha.25.tgz#a7bb4a6d1065b05efe6b01f6c5bee6a4f6f325ef"
+  integrity sha512-y2GHZsI3cUUbWkexHGQH4S5/JKzBma9qkg45ws7uy7ZQ8QeY1K0pcZ8iksAoPyxqHTk2HKTAgM41ZFBcdCMcUg==
   dependencies:
     "@react-pdf/fontkit" "^1.11.0"
     "@react-pdf/pdfkit" "^1.2.0"
@@ -968,10 +968,10 @@
     lodash.topairsin "^4.3.0"
     lodash.upperfirst "^4.3.1"
     media-engine "^1.0.3"
-    page-wrapping "^1.0.2"
+    page-wrapping "^1.1.0"
     react "^16.4.1"
     react-reconciler "^0.12.0"
-    yoga-layout "1.9.3"
+    yoga-layout-prebuilt "1.9.3"
 
 "@react-pdf/script-itemizer@^0.1.12":
   version "0.1.12"
@@ -7495,10 +7495,10 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
   integrity sha512-hMp0onDKIajHfIkdRk3P4CdCmErkYAxxDtP3Wx/4nZ3aGlau2VKh3mZpcuFkH27WQkL/3WBCPOktzA9ZOAnMQQ==
 
-page-wrapping@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/page-wrapping/-/page-wrapping-1.0.2.tgz#7d7dd7166f64cf241078af4a885aaf1fae776321"
-  integrity sha512-FIRpkHQB4hJwPWjT0DmpHm0NLkm6WBn2tGzPXO3efJWBA2l7sjtFdjAW8QrCvbw5kmP1sO64yroc2HnTlH9LcQ==
+page-wrapping@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/page-wrapping/-/page-wrapping-1.1.0.tgz#8446eb6b17fa7c59d75f0f9c9ece5217ff5f29a4"
+  integrity sha512-DAnqZJ3FHKLXVbdQfvGoHyZRFZL+N1IIZlo2RImFqrZ3scoFS8lOHZoLQxnYbsnCMQkwoEyESd0ZNs5RbEsArA==
 
 pako@^0.2.5:
   version "0.2.9"
@@ -11146,6 +11146,11 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+yoga-layout-prebuilt@1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/yoga-layout-prebuilt/-/yoga-layout-prebuilt-1.9.3.tgz#11e3be29096afe3c284e5d963cc2d628148c1372"
+  integrity sha512-9SNQpwuEh2NucU83i2KMZnONVudZ86YNcFk9tq74YaqrQfgJWO3yB9uzH1tAg8iqh5c9F5j0wuyJ2z72wcum2w==
 
 yoga-layout@1.9.3:
   version "1.9.3"
