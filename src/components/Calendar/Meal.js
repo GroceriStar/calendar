@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DisplayList from "./DisplayList";
 import { Link } from 'react-router-dom';
-import { getRecipeChickenKyiv } from "../selectors/Selector.js";
+import { getRecipeChickenKyiv } from "../selectors/selector.js";
 
 class Meal extends Component {
   constructor(props){
@@ -10,7 +10,7 @@ class Meal extends Component {
       id: parseInt(props.match.params.id,10)
     }
   }
-
+//
   render() {
     let recipe = getRecipeChickenKyiv()[this.state.id];
     return (

@@ -5,7 +5,7 @@ import React, { Component } from "react";
 // import data from "@groceristar/groceristar-fetch/mealCalendar";
 // import { rendererFunc } from "./Methods.js";
 import RenderData from "./RenderData.js";
-import { getDish } from "../selectors/Selector.js";
+import { getDish } from "../selectors/selector.js";
 
 class ColumnRender extends Component {
   

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { ScheduleRender } from "./Schedule";
+import { ScheduleRender } from "./ScheduleRender";
 import { TimeLine } from "./Timeline";
 
 // @TODO we call this component WorkSchedule only because
 // our HTML template have a Workout Schedule plage, So i assume - we can make it better and simplier...
 
 
-import { getRecipeChickenKyiv } from "../selectors/Selector.js";
+import { getRecipeChickenKyiv } from "../selectors/selector.js";
 
 import "./WorkSchedule.css";
 
