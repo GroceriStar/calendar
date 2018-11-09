@@ -29,8 +29,7 @@ class WorkSchedule extends Component {
   }
 
   getRandomWeek(){
-
-    return "week" + Math.floor(Math.random() * 10);
+    return "week" + Math.floor(Math.random() * 10 + 1);
   }
 
   getFiveRandomIngredients(){
