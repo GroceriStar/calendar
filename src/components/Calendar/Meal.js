@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import { getRecipeChickenKyiv } from "../selectors/selector.js";
 
 class Meal extends Component {
+
   constructor(props){
     super(props);
     this.state = {
       id: parseInt(props.match.params.id,10)
     }
   }
-//
+
   render() {
     let recipe = getRecipeChickenKyiv()[this.state.id];
     return (

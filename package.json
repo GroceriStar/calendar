@@ -18,7 +18,7 @@
     "reactstrap": "^6.5.0",
     "shortid": "^2.2.14",
     "underscore": "^1.9.1",
-    "yoga-layout": "github:naminho/yoga-layout-windows"
+    "yoga-layout": "github:naminho/yoga-layout-windows.git"
   },
   "scripts": {
     "start": "react-scripts start",

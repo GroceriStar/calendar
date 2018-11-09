@@ -10,7 +10,7 @@ import {
 import shortid from "shortid";
 
 import "./ModalWork.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 class Modals extends Component {
@@ -74,7 +74,9 @@ class Modals extends Component {
           className={this.props.data.tag}
           onClick={this.toggle}
         >
-          <div>{this.transformTime(this.props.data.time)}</div>
+          <div>
+            {this.transformTime(this.props.data.time)}
+          </div>
           {this.props.data.text}
 
         </ListGroupItem>

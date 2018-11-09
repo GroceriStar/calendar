@@ -11165,11 +11165,10 @@ yoga-layout-prebuilt@1.9.3:
 
 yoga-layout@1.9.3:
   version "1.9.3"
-  uid eb8d14107b321d3bbe85955e836d52d098922fd0
   resolved "https://github.com/naminho/yoga-layout-windows#eb8d14107b321d3bbe85955e836d52d098922fd0"
   integrity sha512-DFN0q9IGk/MOkv5/YQurbjWaE2OAzWzM5nKnWFTiJoQEo/7OZ07wtOXuUbZlnSxbwqBhtGc4x2PD4KqBXoVvDg==
 
-"yoga-layout@github:naminho/yoga-layout-windows":
+"yoga-layout@github:naminho/yoga-layout-windows.git":
   version "1.9.3"
   uid eb8d14107b321d3bbe85955e836d52d098922fd0
   resolved "https://codeload.github.com/naminho/yoga-layout-windows/tar.gz/eb8d14107b321d3bbe85955e836d52d098922fd0"
