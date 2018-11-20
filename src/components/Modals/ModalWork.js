@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import {
   ListGroupItem,
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter
 } from "reactstrap";
 import shortid from "shortid";
 
 import "./ModalWork.css";
-import { Link } from "react-router-dom";
 import RenderModal from '../RenderModal/RenderModal'
 
 class Modals extends Component {
