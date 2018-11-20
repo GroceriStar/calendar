@@ -11,7 +11,7 @@ import shortid from "shortid";
 
 import "./ModalWork.css";
 import { Link } from "react-router-dom";
-
+import RenderModal from '../RenderModal/RenderModal'
 
 class Modals extends Component {
   constructor(props) {
@@ -56,7 +56,8 @@ class Modals extends Component {
   displayIngredients() {
 
     // console.log(recipes);
-
+    console.log("this.props.className");
+    console.log(this.props.className);
     let result = this.props.ingredient["ingredient"];
     // console.log(result);
     if (!result){
@@ -66,7 +67,7 @@ class Modals extends Component {
   }
 
   render() {
-    // console.log(this.props);
+    console.log(this.props);
     return (
       <div>
         <ListGroupItem
@@ -80,34 +81,16 @@ class Modals extends Component {
           {this.props.data.text}
 
         </ListGroupItem>
-        <Modal
-          isOpen={this.state.modal}
-          toggle={this.toggle}
-          className={this.props.className}
-        >
-          <ModalHeader toggle={this.toggle}>
-          {this.props.data.text}
-          <br/>
-            <Link activeClassName = "link-id" to= {this.getLink()}>
-              <button className = "read-more" type="button">
-                Read more...
-                </button>
-            </Link>
-          </ModalHeader>
-          <ModalBody>
-            <h3>Ingredients</h3>
-            <ul>{this.displayIngredients()}</ul>
-          </ModalBody>
-          <ModalFooter>
 
-            <Button color="primary" onClick={this.toggle}>
-              Ok
-            </Button>{" "}
-            <Button color="secondary" onClick={this.toggle}>
-              Cancel
-            </Button>
-          </ModalFooter>
-        </Modal>
+        <RenderModal
+          modal={this.state.modal}
+          data={this.props.data}
+          toggle={this.toggle}
+          link={this.getLink()}
+          displayIngredients = {this.displayIngredients()}
+          className={this.props.className}
+        />
+
       </div>
     );
   }
