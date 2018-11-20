@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import {
-  ListGroupItem,
   Button,
   Modal,
   ModalHeader,
   ModalBody,
   ModalFooter
 } from "reactstrap";
-import shortid from "shortid";
 
 import "../Modals/ModalWork.css";
 import { NavLink } from "react-router-dom";
