@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import DisplayList from "./DisplayList";
 import { Link } from 'react-router-dom';
-import { getRecipeChickenKyiv } from "../selectors/selector.js";
+import { getRecipeChickenKyivById } from "../selectors/selector.js";
 
 // @TODO We can have a separated componentm that will have this structure
 // - h3
@@ -11,9 +11,6 @@ import { getRecipeChickenKyiv } from "../selectors/selector.js";
 
 // @TODO create a separated component - named MealLayout
 // we'll use it in order to create a ways to display recipe
-
-
-
 
 const Block = ({title, data}) => {
   return (<Fragment>
@@ -26,7 +23,6 @@ const Block = ({title, data}) => {
 }
 
 const IngredientsBlock = ({ ingredients }) => {
-
   return(
   <Block title="Ingredients" data={ingredients} />
 )
@@ -48,8 +44,7 @@ class Meal extends Component {
   }
 
   render() {
-    // @TODO create a separate method at selector, so we can actually get only one recipe that we needed by passing id into it
-    let recipe = getRecipeChickenKyiv()[this.state.id];
+    let recipe = getRecipeChickenKyivById(this.state.id);
     return (
       <div>
         <div>
