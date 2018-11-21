@@ -12,22 +12,30 @@ import { getRecipeChickenKyiv } from "../selectors/selector.js";
 // @TODO create a separated component - named MealLayout
 // we'll use it in order to create a ways to display recipe
 
-const IngredientsBlock = ({ ingredients }) => {
-  <Block title="Ingredients" data={ingredients} />
-}
 
-const DirectionsBlock = ({ directions }) => {
-  <Block title="Directions" data={directions} />
-}
 
 
 const Block = ({title, data}) => {
-  <Fragment>
+  return (<Fragment>
     <h3>
       {title}
     </h3>
     <DisplayList data={data} />
   </Fragment>
+)
+}
+
+const IngredientsBlock = ({ ingredients }) => {
+
+  return(
+  <Block title="Ingredients" data={ingredients} />
+)
+}
+
+const DirectionsBlock = ({ directions }) => {
+  return(
+  <Block title="Directions" data={directions} />
+)
 }
 
 class Meal extends Component {
@@ -48,8 +56,8 @@ class Meal extends Component {
           <h2>
             {recipe.title}
           </h2>
-          <IngredientsBlock />
-          <DirectionsBlock />
+          <IngredientsBlock ingredients={recipe.ingredients}/>
+          <DirectionsBlock directions={recipe.directions}/>
 
         </div>
         <Link to="/">
