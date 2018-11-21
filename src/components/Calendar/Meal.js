@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import DisplayList from "./DisplayList";
 import { Link } from 'react-router-dom';
 import { getRecipeChickenKyiv } from "../selectors/selector.js";
@@ -10,7 +10,26 @@ import { getRecipeChickenKyiv } from "../selectors/selector.js";
 
 
 // @TODO create a separated component - named MealLayout
-// we'll use it in order to create a ways to display recipe 
+// we'll use it in order to create a ways to display recipe
+
+const IngredientsBlock = ({ ingredients }) => {
+  <Block title="Ingredients" data={ingredients} />
+}
+
+const DirectionsBlock = ({ directions }) => {
+  <Block title="Directions" data={directions} />
+}
+
+
+const Block = ({title, data}) => {
+  <Fragment>
+    <h3>
+      {title}
+    </h3>
+    <DisplayList data={data} />
+  </Fragment>
+}
+
 class Meal extends Component {
 
   constructor(props){
@@ -29,11 +48,9 @@ class Meal extends Component {
           <h2>
             {recipe.title}
           </h2>
-          <h3>Ingredients</h3>
-          <DisplayList data={recipe.ingredients} />
+          <IngredientsBlock />
+          <DirectionsBlock />
 
-          <h3>Directions</h3>
-          <DisplayList data={recipe.directions} />
         </div>
         <Link to="/">
           <h3>Back</h3>
