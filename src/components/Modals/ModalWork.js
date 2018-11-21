@@ -7,6 +7,11 @@ import shortid from "shortid";
 import "./ModalWork.css";
 import RenderModal from '../RenderModal/RenderModal'
 
+// @TODO move here displayIngredients() logic
+const IngredientsList = ({}) => {
+
+}
+
 class Modals extends Component {
   constructor(props) {
     super(props);

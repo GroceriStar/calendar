@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import shortid from "shortid";
 
+//@TODO figure out and tell me if we're using this component or not
+
 class DisplayList extends Component {
   constructor(props){
     super(props);

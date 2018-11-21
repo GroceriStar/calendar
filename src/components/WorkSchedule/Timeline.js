@@ -17,7 +17,9 @@ class TimeLine extends Component {
 
   getGroupTime(){
     let clock = [
-      "07:00","08:00","09:00","12:00","13:00","14:00",
+      "07:00","08:00",
+      "09:00","12:00",
+      "13:00","14:00",
       "18:00","19:00"
     ];
     let result = clock.map(item => {

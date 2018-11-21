@@ -13,7 +13,7 @@ import "./WorkSchedule.css";
 
 
 class WorkSchedule extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -32,6 +32,8 @@ class WorkSchedule extends Component {
     return "week" + Math.floor(Math.random() * 10 + 1);
   }
 
+
+  //@TODO make it too fetch plugin
   getFiveRandomIngredients(){
     let ingredients = getRecipeChickenKyiv();
     let result = [];

@@ -6,9 +6,9 @@ import {
   ModalBody,
   ModalFooter
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 import "../Modals/ModalWork.css";
-import { NavLink } from "react-router-dom";
 
 class RenderModal extends Component {
 
@@ -20,23 +20,21 @@ class RenderModal extends Component {
         className={this.props.className}
       >
         <ModalHeader toggle={this.props.toggle}>
-        {this.props.data.text}
-        <br/>
+          {this.props.data.text}
+        </ModalHeader>
+        <ModalBody>
+
+          <h3>Ingredients</h3>
+          <ul>{this.props.displayIngredients}</ul>
+
+        </ModalBody>
+        <ModalFooter>
           <NavLink activeClassName = "link-id" to= {this.props.link}>
-            <button className = "read-more" type="button">
+            <button className = "read-more primary" type="button">
               Read more...
               </button>
           </NavLink>
-        </ModalHeader>
-        <ModalBody>
-          <h3>Ingredients</h3>
-          <ul>{this.props.displayIngredients}</ul>
-        </ModalBody>
-        <ModalFooter>
-
-          <Button color="primary" onClick={this.props.toggle}>
-            Ok
-          </Button>{" "}
+          {" "}
           <Button color="secondary" onClick={this.props.toggle}>
             Cancel
           </Button>
@@ -45,4 +43,4 @@ class RenderModal extends Component {
     )
   }
 }
-export default RenderModal ;
+export default RenderModal;
