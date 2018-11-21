@@ -7,9 +7,11 @@ import shortid from "shortid";
 import "./ModalWork.css";
 import RenderModal from '../RenderModal/RenderModal'
 
-// @TODO move here displayIngredients() logic
-const IngredientsList = ({}) => {
-
+const IngredientsList = ({ ingredient }) => {
+  if (!ingredient){
+    return '';
+  }
+  return ingredient.map(item => <li key={shortid.generate()}>{item}</li>);
 }
 
 class Modals extends Component {
@@ -52,18 +54,6 @@ class Modals extends Component {
     }
   }
 
-  displayIngredients() {
-
-    // console.log(recipes);
-    console.log("this.props.className");
-    console.log(this.props.className);
-    let result = this.props.ingredient["ingredient"];
-    // console.log(result);
-    if (!result){
-      return '';
-    }
-    return result.map(item => <li key={shortid.generate()}>{item}</li>);
-  }
 
   render() {
     console.log(this.props);
@@ -86,10 +76,11 @@ class Modals extends Component {
           data={this.props.data}
           toggle={this.toggle}
           link={this.getLink()}
-          displayIngredients = {this.displayIngredients()}
           className={this.props.className}
-        />
+        >
+          <IngredientsList ingredient={this.props.ingredient["ingredient"]} />
 
+        </RenderModal>
       </div>
     );
   }

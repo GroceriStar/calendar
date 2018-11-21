@@ -25,7 +25,7 @@ class RenderModal extends Component {
         <ModalBody>
 
           <h3>Ingredients</h3>
-          <ul>{this.props.displayIngredients}</ul>
+          <ul>{this.props.children}</ul>
 
         </ModalBody>
         <ModalFooter>
