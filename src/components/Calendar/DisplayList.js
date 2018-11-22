@@ -5,20 +5,20 @@ import shortid from "shortid";
 //@TODO figure out and tell me if we're using this component or not
 
 class DisplayList extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      data: []
-    }
-  }
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     data: []
+  //   }
+  // }
 
-  getData(){
-    this.setState({data: this.props.data});
-  }
-
-  componentDidMount() {
-    this.getData();
-  }
+  // getData(){
+  //   this.setState({data: this.props.data});
+  // }
+  //
+  // componentDidMount() {
+  //   this.getData();
+  // }
 
   render() {
     return (

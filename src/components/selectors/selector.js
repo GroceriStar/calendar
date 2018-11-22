@@ -8,4 +8,8 @@ import { mealCalendar, chickenKyiv } from "@groceristar/groceristar-fetch";
       return chickenKyiv.getRecipe();
 }
 
-export { getDish, getRecipeChickenKyiv }
+function getRecipeChickenKyivById(id) {
+  return chickenKyiv.getRecipe()[id];
+}
+
+export { getDish, getRecipeChickenKyiv, getRecipeChickenKyivById}
