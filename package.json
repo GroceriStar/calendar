@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@groceristar/groceristar-fetch": "^1.1.33",
-    "@react-pdf/core": "latest",
+    "@groceristar/grocery-component": "^1.0.4",
     "@react-pdf/renderer": "^1.0.0",
     "bootstrap": "^4.1.3",
     "classnames": "^2.2.6",
@@ -17,8 +17,7 @@
     "react-scripts": "2.1.1",
     "reactstrap": "^6.5.0",
     "shortid": "^2.2.14",
-    "underscore": "^1.9.1",
-    "yoga-layout": "github:naminho/yoga-layout-windows.git"
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
