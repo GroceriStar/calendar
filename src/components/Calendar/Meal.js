@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
-import DisplayList from "./DisplayList";
+
 import { Link } from 'react-router-dom';
 import { getRecipeChickenKyivById } from "../selectors/selector.js";
 
+import { IngredientList, DefaultList } from '@groceristar/grocery-component'
 // @TODO We can have a separated componentm that will have this structure
 // - h3
 // - displayList
@@ -13,12 +14,14 @@ import { getRecipeChickenKyivById } from "../selectors/selector.js";
 // we'll use it in order to create a ways to display recipe
 
 const Block = ({title, data}) => {
-  return (<Fragment>
-    <h3>
-      {title}
-    </h3>
-    <DisplayList data={data} />
-  </Fragment>
+  return (
+    <Fragment>
+      <h3>
+        {title}
+      </h3>
+
+      <DefaultList items={data} />
+    </Fragment>
 )
 }
 

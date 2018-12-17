@@ -775,7 +775,7 @@
     lodash "^4.17.10"
     uuid "3.3.2"
 
-"@groceristar/grocery-component@^1.0.4":
+"@groceristar/grocery-component@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@groceristar/grocery-component/-/grocery-component-1.0.5.tgz#fb921396eed05a3173aed8a753d8e2642d1b06b6"
   dependencies:

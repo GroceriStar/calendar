@@ -4,7 +4,7 @@ import { Modals } from "../Modals/ModalWork";
 import { ListGroupItem } from "reactstrap";
 import { defaultBlockHeight, fillerBlockHeight } from "../../data/style_vars";
 
-class RenderData extends Component{
+class RenderData extends Component {
   constructor(props){
     super(props);
     this.state = props.mealByDay;

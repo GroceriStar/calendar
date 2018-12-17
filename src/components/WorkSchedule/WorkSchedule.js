@@ -33,7 +33,7 @@ class WorkSchedule extends Component {
   }
 
 
-  //@TODO make it too fetch plugin
+  //@TODO moooove it too fetch plugin
   getFiveRandomIngredients(){
     let ingredients = getRecipeChickenKyiv();
     let result = [];
