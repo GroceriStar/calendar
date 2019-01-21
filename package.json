@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@groceristar/groceristar-fetch": "^1.1.36",
+    "@groceristar/groceristar-fetch": "^1.1.50",
     "@groceristar/grocery-component": "^1.0.6",
     "@react-pdf/renderer": "^1.2.0",
     "antd": "^3.11.6",
