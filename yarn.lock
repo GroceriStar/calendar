@@ -883,13 +883,14 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@groceristar/groceristar-fetch@^1.1.36":
-  version "1.1.36"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.36.tgz#6e08699392cd83d343e12dc6469bd6f337bb3de0"
-  integrity sha512-MyxMkHs7Pr5gFEb5D/652uPUpKzktjEi/9GIGGGLOR3p9UrUW1i8BFtk584mQuLL94l7D7hSx9qHcin2ScrLiw==
+"@groceristar/groceristar-fetch@^1.1.56":
+  version "1.1.56"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.56.tgz#6a6f6c3b400a5c1d3a44afbd5babb1c6286f8507"
+  integrity sha512-KjzlFG+LJFyTmSMIjVU46/PARkGCgAYX1Su7a3PCHsjTAPekzujmLx0Q4GQkWI5jYj4JWscKw/JzF9LLsdl1vA==
   dependencies:
     fs "0.0.1-security"
     lodash "^4.17.10"
+    underscore "^1.9.1"
     uuid "3.3.2"
 
 "@groceristar/grocery-component@^1.0.6":
