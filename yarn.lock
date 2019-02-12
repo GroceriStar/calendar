@@ -910,37 +910,35 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@react-pdf/png-js/-/png-js-1.0.0.tgz#00fcb969dca4ce82a0a7673413ade039e47b361e"
 
-"@react-pdf/renderer@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.2.2.tgz#1aa0ffe5e45e413710e31d9c6c4b64a3db7f4348"
-  integrity sha512-usJ6Nn/Eb1YjFSh8XK6iCEMFtp2K22uB3t91q4GoCEw5X15nGPmqvHUy4jayQqDvaxnKT91NLV96Dg4DKL1gLQ==
+"@react-pdf/renderer@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.3.1.tgz#9aec61ff3ef7769b646756136426dccd450b3419"
+  integrity sha512-nY7FGwEQC5NWvX8OYorMa/obbwIM0uHrAY+oxBQovZJpvk4c8EChrHlD7J1Uplq7vf3tPaPcQPWbNy3B6S5g8g==
   dependencies:
     "@react-pdf/fontkit" "^1.13.0"
     "@react-pdf/pdfkit" "^1.2.0"
     "@react-pdf/png-js" "^1.0.0"
     "@react-pdf/script-itemizer" "^0.2.1"
-    "@react-pdf/textkit-core" "^0.2.0"
+    "@react-pdf/textkit-core" "^0.2.1"
     "@textkit/justification-engine" "^0.1.9"
     "@textkit/pdf-renderer" "^0.1.11"
     "@textkit/text-decoration-engine" "^0.1.10"
     babel-runtime "^6.26.0"
     blob-stream "^0.1.3"
+    cross-fetch "^3.0.1"
     emoji-regex "^6.5.1"
-    fbjs "^0.8.4"
     hyphenation.en-us "^0.2.1"
     hypher "^0.2.5"
     is-url "^1.2.2"
-    isomorphic-fetch "^2.2.1"
     lodash.groupby "^4.6.0"
     lodash.isfunction "^3.0.8"
-    lodash.isnil "^4.0.0"
     lodash.merge "^4.6.1"
     lodash.pick "^4.4.0"
     lodash.topairsin "^4.3.0"
     media-engine "^1.0.3"
     page-wrapping "^1.1.0"
     react "^16.4.1"
-    react-reconciler "^0.12.0"
+    react-reconciler "^0.19.1"
     yoga-layout-prebuilt "1.9.3"
 
 "@react-pdf/script-itemizer@^0.2.1":
@@ -949,9 +947,10 @@
   dependencies:
     "@react-pdf/unicode-properties" "^2.2.0"
 
-"@react-pdf/textkit-core@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@react-pdf/textkit-core/-/textkit-core-0.2.0.tgz#d577175b7dcae160bdd537a1123d7a976064f169"
+"@react-pdf/textkit-core@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@react-pdf/textkit-core/-/textkit-core-0.2.1.tgz#cc4bb3fa52891f82b31862436f2a16bd26bc63f0"
+  integrity sha512-gjmik84OMOhFkYDzaUfGBj0X0BoUrwppOtrcqn1xGyMHKSiW2v2txmKXF0fNzyjIRfTC2xj+hc20PMi7ICm6Eg==
   dependencies:
     "@react-pdf/unicode-properties" "^2.2.0"
     cubic2quad "^1.1.0"
@@ -2643,6 +2642,14 @@ create-react-context@0.2.2:
     fbjs "^0.8.0"
     gud "^1.0.0"
 
+cross-fetch@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.1.tgz#3f207bbd829a76e9aa2a953348bd1f2a3cf388a7"
+  integrity sha512-qWtpgBAF8ioqBOddRD+pHhrdzm/UWOArkrlIU7c08DlNbOxo5GfUbSY2vr90ZypWf0raW+HNN1F38pi5CEOjiQ==
+  dependencies:
+    node-fetch "2.3.0"
+    whatwg-fetch "3.0.0"
+
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -3884,7 +3891,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.0, fbjs@^0.8.15, fbjs@^0.8.16, fbjs@^0.8.4, fbjs@^0.8.9:
+fbjs@^0.8.0, fbjs@^0.8.15, fbjs@^0.8.16, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -5166,7 +5173,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
-isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
+isomorphic-fetch@^2.1.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
@@ -5919,10 +5926,6 @@ lodash.isfunction@^3.0.8, lodash.isfunction@^3.0.9:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/lodash.isfunction/-/lodash.isfunction-3.0.9.tgz#06de25df4db327ac931981d1bdb067e5af68d051"
 
-lodash.isnil@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/lodash.isnil/-/lodash.isnil-4.0.0.tgz#49e28cd559013458c814c5479d3c663a21bfaa6c"
-
 lodash.isobject@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/lodash.isobject/-/lodash.isobject-3.0.2.tgz#3c8fb8d5b5bf4bf90ae06e14f2a530a4ed935e1d"
@@ -6418,6 +6421,11 @@ no-case@^2.2.0:
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
   dependencies:
     lower-case "^1.1.1"
+
+node-fetch@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
+  integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
 
 node-fetch@^1.0.1:
   version "1.7.3"
@@ -8367,14 +8375,15 @@ react-popper@^0.10.4:
     popper.js "^1.14.1"
     prop-types "^15.6.1"
 
-react-reconciler@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.12.0.tgz#dd3ecd98f64a2d8449298dadab041910cafd2849"
+react-reconciler@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.19.1.tgz#0735fc290617780a2c9735218a4762e7d77797e6"
+  integrity sha512-zgzY3mLQ2CpQ9hP3tEZi6wlRW628V4WYiRigaSbrgvN013STZn3/N19p8pW4/dn4oCKapRuL7dycbtwRcOzE+w==
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.13.1"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -8958,6 +8967,14 @@ schedule@^0.5.0:
 scheduler@^0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.1.tgz#1a217df1bfaabaf4f1b92a9127d5d732d85a9591"
+  integrity sha512-VJKOkiKIN2/6NOoexuypwSrybx13MY7NSy9RNt8wPvZDMRT1CW6qlpF5jXRToXNHz3uWzbm2elNpZfXfGPqP9A==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
