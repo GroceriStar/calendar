@@ -900,10 +900,10 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@groceristar/groceristar-fetch@^1.2.13":
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.13.tgz#5ecc4410868daae09911ccbb52619a67f6a5cfc6"
-  integrity sha512-QBHdDWn+Jnq4c3/l3OwdX+SvUsAKlB12CgLUN6k0FxinZZzPzuuR8Npo6J2mpODqwfTeuc9R6uly6y9SUpw/dQ==
+"@groceristar/groceristar-fetch@^1.2.15":
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.15.tgz#06398ec20ce747b5d3fe1a74b171bcd87fb1c7ff"
+  integrity sha512-W6KHaywi+3ru2qLr8Ubb5KqIDmENk7QmBLBADz180SlPkIvWcuF3IvK9B1Z56UwriB8EkDgs8U0ahhTs4Hbwwg==
   dependencies:
     "@groceristar/sd-wrapper" "^1.0.15"
     dayjs "^1.8.0"
