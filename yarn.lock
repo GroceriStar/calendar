@@ -900,12 +900,12 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@groceristar/groceristar-fetch@^1.2.13":
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.13.tgz#5ecc4410868daae09911ccbb52619a67f6a5cfc6"
-  integrity sha512-QBHdDWn+Jnq4c3/l3OwdX+SvUsAKlB12CgLUN6k0FxinZZzPzuuR8Npo6J2mpODqwfTeuc9R6uly6y9SUpw/dQ==
+"@groceristar/groceristar-fetch@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.0.6.tgz#0a9d9edbbf530863a8ffa232e294acf110d8b9aa"
+  integrity sha512-yAVM2BUIM86LAz0b3bVpBAa+9mmsrfaOXO1flT0Mo/MmexcFlOxRaCY2c/ppdF/5aE3PXgOvT9HG5XgFBp60zQ==
   dependencies:
-    "@groceristar/sd-wrapper" "^1.0.15"
+    "@groceristar/sd-wrapper" "^2.0.6"
     dayjs "^1.8.0"
     fs "0.0.2"
     lodash "^4.17.10"
@@ -919,12 +919,11 @@
   dependencies:
     uuid "^3.3.2"
 
-"@groceristar/sd-wrapper@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-1.0.15.tgz#08d83ca71db738d43852e612fe09de412ef540ab"
-  integrity sha512-TpWbb5uFdyaYy56rOYEGrzHGY8Mm58jAYUaJzfeEHSo7H3+MGCXh6iP6r9pJMe/BXjwqct6BsEPqQFetk3w6xg==
+"@groceristar/sd-wrapper@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-2.0.6.tgz#5e27235a3083c4dd102c92873ba5dee9f1e3a776"
+  integrity sha512-CQmkZg/mcRM7Q9O8jofmOXsccEJDobWdHrvIdwn9iIZMAW95NyP05ERAGsJ/yGMx/9+l33Y4EsZRCHhUoLOlCQ==
   dependencies:
-    fs "^0.0.1-security"
     path "^0.12.7"
     uuid "^3.3.2"
 
@@ -4409,11 +4408,6 @@ fs@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.2.tgz#e1f244ef3933c1b2a64bd4799136060d0f5914f8"
   integrity sha1-4fJE7zkzwbKmS9R5kTYGDQ9ZFPg=
-
-fs@^0.0.1-security:
-  version "0.0.1-security"
-  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
-  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
 
 fsevents@1.2.4, fsevents@^1.2.2, fsevents@^1.2.3:
   version "1.2.4"
