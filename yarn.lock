@@ -964,35 +964,31 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@react-pdf/png-js/-/png-js-1.0.0.tgz#00fcb969dca4ce82a0a7673413ade039e47b361e"
 
-"@react-pdf/renderer@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.5.0.tgz#0c33c7e6dec111dbae7a058ec442e7f718662a25"
-  integrity sha512-Ica7giI8UX/1xCoaM7vs3WrMSIm1QjX7bWvJv61HOcluAAXyBjmin5oUrl+lU2Y3Q6enHF9atMYJljMGZ0M9Vg==
+"@react-pdf/renderer@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.6.0.tgz#35850764e1f9fb29674f155038648e4b9ce26eab"
+  integrity sha512-IAaAMVLfzd3rOkHSjUQBiTdPrZ955MJ07oEoEpMlLdmpzo/R32IqmyjC6EXtVxQxrVPpDI/0EDIGiFJHP1zLgA==
   dependencies:
     "@babel/runtime" "^7.3.1"
     "@react-pdf/fontkit" "^1.13.0"
     "@react-pdf/pdfkit" "^1.2.0"
     "@react-pdf/png-js" "^1.0.0"
-    "@react-pdf/textkit" "^0.3.1"
+    "@react-pdf/textkit" "^0.3.7"
     blob-stream "^0.1.3"
-    cross-fetch "^3.0.1"
-    emoji-regex "^7.0.3"
+    cross-fetch "^3.0.2"
+    emoji-regex "^8.0.0"
     is-url "^1.2.4"
-    lodash.groupby "^4.6.0"
-    lodash.isfunction "^3.0.9"
-    lodash.merge "^4.6.1"
-    lodash.pick "^4.4.0"
-    lodash.topairsin "^4.3.0"
     media-engine "^1.0.3"
     page-wrapping "^1.1.0"
-    react "^16.8.3"
-    react-reconciler "^0.20.1"
+    ramda "^0.26.1"
+    react "^16.8.6"
+    react-reconciler "^0.20.4"
     yoga-layout-prebuilt "^1.9.3"
 
-"@react-pdf/textkit@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@react-pdf/textkit/-/textkit-0.3.1.tgz#3b9ee207907592fa04e4cede87c64449550d1731"
-  integrity sha512-T8zS8dRIrQ8HpKKGsFkYmNcXfAnsYpm6hjjFMYBZ/5URNugQPTfURNW2OpiV2Oi4OurZGBI+lXY68n1f4h7i7w==
+"@react-pdf/textkit@^0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@react-pdf/textkit/-/textkit-0.3.7.tgz#67bcc4d952ad1cd738b3cb38c8396219450f536b"
+  integrity sha512-JyK06VofTG4/6Mxv9ugqGyKS/nnbg7MXXHmzeYLP+wwxZsgiatjybVBSXI+DW+++UeyUKLrCYQh2RaxliRm+NQ==
   dependencies:
     "@babel/runtime" "^7.4.3"
     "@react-pdf/unicode-properties" "^2.2.0"
@@ -2873,10 +2869,10 @@ create-react-context@0.2.2:
     fbjs "^0.8.0"
     gud "^1.0.0"
 
-cross-fetch@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.1.tgz#3f207bbd829a76e9aa2a953348bd1f2a3cf388a7"
-  integrity sha512-qWtpgBAF8ioqBOddRD+pHhrdzm/UWOArkrlIU7c08DlNbOxo5GfUbSY2vr90ZypWf0raW+HNN1F38pi5CEOjiQ==
+cross-fetch@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.2.tgz#b7136491967031949c7f86b15903aef4fa3f1768"
+  integrity sha512-a4Z0EJ5Nck6QtMy9ZqloLfpvu2uMV3sBfMCR+CgSBCZc6z5KR4bfEiD3dkepH8iZgJMXQpTqf8FjMmvu/GMFkg==
   dependencies:
     node-fetch "2.3.0"
     whatwg-fetch "3.0.0"
@@ -3553,10 +3549,15 @@ emoji-regex@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.5.1.tgz#9baea929b155565c11ea41c6626eaa65cef992c2"
 
-emoji-regex@^7.0.1, emoji-regex@^7.0.3:
+emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
   integrity sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
+
+emoji-regex@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
+  integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -6180,10 +6181,6 @@ lodash.flattendeep@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
 
-lodash.groupby@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.groupby/-/lodash.groupby-4.6.0.tgz#0b08a1dcf68397c397855c3239783832df7403d1"
-
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -6219,14 +6216,6 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
-lodash.merge@^4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
-
-lodash.pick@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
-
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -6256,10 +6245,6 @@ lodash.throttle@^4.0.0:
 lodash.tonumber@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash.tonumber/-/lodash.tonumber-4.0.3.tgz#0b96b31b35672793eb7f5a63ee791f1b9e9025d9"
-
-lodash.topairsin@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/lodash.topairsin/-/lodash.topairsin-4.3.0.tgz#1a6966d46484898fca42522286f1529a4397ad3b"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -8696,7 +8681,7 @@ react-popper@^0.10.4:
     popper.js "^1.14.1"
     prop-types "^15.6.1"
 
-react-reconciler@^0.20.1:
+react-reconciler@^0.20.4:
   version "0.20.4"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.20.4.tgz#3da6a95841592f849cb4edd3d38676c86fd920b2"
   integrity sha512-kxERc4H32zV2lXMg/iMiwQHOtyqf15qojvkcZ5Ja2CPkjVohHw9k70pdDBwrnQhLVetUJBSYyqU3yqrlVTOajA==
@@ -8814,7 +8799,7 @@ react-transition-group@^2.3.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.8.1, react@^16.8.3:
+react@^16.8.1, react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
