@@ -30,7 +30,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "enzyme": "^3.8.0",
+    "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.13.1"
   },
   "browserslist": [
