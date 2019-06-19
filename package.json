@@ -6,7 +6,7 @@
     "@groceristar/groceristar-fetch": "2.2.0",
     "@groceristar/grocery-component": "1.0.10",
     "@react-pdf/renderer": "1.6.2",
-    "antd": "3.19.5",
+    "antd": "3.19.6",
     "bootstrap": "4.3.1",
     "classnames": "2.2.6",
     "i": "0.3.6",
