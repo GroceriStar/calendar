@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - '@groceristar/groceristar-fetch > snyk > proxy-agent > https-proxy-agent':
+        patched: '2019-10-04T00:21:36.033Z'
+    - '@groceristar/groceristar-fetch > snyk > proxy-agent > pac-proxy-agent > https-proxy-agent':
+        patched: '2019-10-04T00:21:36.033Z'
+    - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > snyk > proxy-agent > https-proxy-agent':
+        patched: '2019-10-04T00:21:36.033Z'
+    - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > snyk > proxy-agent > pac-proxy-agent > https-proxy-agent':
+        patched: '2019-10-04T00:21:36.033Z'
