@@ -19,7 +19,8 @@
     "reactstrap": "8.0.1",
     "shortid": "2.2.15",
     "underscore": "1.9.1",
-    "uuid": "3.3.3"
+    "uuid": "3.3.3",
+    "snyk": "^1.230.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,7 +28,9 @@
     "test": "react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --watch",
     "test:coverage": "react-scripts test --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "enzyme": "3.10.0",
@@ -38,5 +41,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
