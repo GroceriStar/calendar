@@ -20,7 +20,7 @@
     "shortid": "2.2.15",
     "underscore": "1.9.1",
     "uuid": "3.3.3",
-    "snyk": "^1.230.5"
+    "snyk": "^1.232.0"
   },
   "scripts": {
     "start": "react-scripts start",
