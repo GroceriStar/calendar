@@ -20,7 +20,7 @@
     "shortid": "2.2.15",
     "underscore": "1.9.1",
     "uuid": "3.3.3",
-    "snyk": "1.256.0"
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +29,7 @@
     "test:watch": "react-scripts test --watch",
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -12,3 +12,104 @@ patch:
         patched: '2019-10-04T00:21:36.033Z'
     - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > snyk > proxy-agent > pac-proxy-agent > https-proxy-agent':
         patched: '2019-10-04T00:21:36.033Z'
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - antd > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > inquirer > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > snyk-config > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - antd > @ant-design/react-slick > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - antd > rc-steps > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - antd > rc-table > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - antd > rc-tabs > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > @babel/core > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > eslint > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > eslint-plugin-flowtype > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > html-webpack-plugin > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > webpack-manifest-plugin > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > @groceristar/static-data-generator > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > babel-eslint > @babel/traverse > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > @snyk/dep-graph > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > inquirer > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > snyk-config > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > snyk-mvn-plugin > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > snyk-nodejs-lockfile-parser > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > snyk-nuget-plugin > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > @babel/core > @babel/traverse > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > eslint > inquirer > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > eslint > table > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > react-dev-utils > inquirer > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > babel-eslint > @babel/traverse > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > @snyk/dep-graph > graphlib > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/ruby-semver > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > webpack-dev-server > portfinder > async > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > babel-eslint > @babel/traverse > @babel/generator > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - '@groceristar/groceristar-fetch > snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/ruby-semver > lodash':
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/plugin-transform-modules-amd > @babel/helper-module-transforms > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
+    - react-scripts > jest-environment-jsdom-fourteen > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2021-10-23T01:39:44.198Z'
