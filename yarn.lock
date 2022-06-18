@@ -11970,7 +11970,7 @@ strip-comments@^1.0.2:
 
 strip-eof@^1.0.0:
   version "1.0.0"
-  resolved "http://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz"
   integrity sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
 
 strip-json-comments@^3.0.1:
@@ -12173,7 +12173,7 @@ through2@^2.0.0, through2@^2.0.2, through2@^2.0.3:
 
 through@^2.3.6, through@~2.3.4:
   version "2.3.8"
-  resolved "http://registry.npmjs.org/through/-/through-2.3.8.tgz"
+  resolved "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
 thunkify@^2.1.2:
@@ -13315,6 +13315,6 @@ yargs@^3.19.0:
     y18n "^3.2.0"
 
 yarn@^1.16.0:
-  version "1.17.3"
-  resolved "https://registry.npmjs.org/yarn/-/yarn-1.17.3.tgz"
-  integrity sha512-CgA8o7nRZaQvmeF/WBx2FC7f9W/0X59T2IaLYqgMo6637wfp5mMEsM3YXoJtKUspnpmDJKl/gGFhnqS+sON7hA==
+  version "1.22.19"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.19.tgz#4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  integrity sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==
